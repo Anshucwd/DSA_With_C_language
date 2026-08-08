@@ -11,7 +11,7 @@ int main()
     {
         scanf("%d",&array[i]);
     }
-    for(int pass=0;pass<size-1;pass++)
+     for(int pass=0;pass<size-1;pass++)
     {
        int sorted_array[size];
          for(i=0;i<(size-1)-pass;i++)
@@ -23,11 +23,12 @@ int main()
                 array[i]=temp;
             }
          } 
-    }     
+     }     
         printf("Sorted array=");
            for(i=0;i<size;i++)
          {
            printf("%d ",array[i]);
          }
- return 0;
+
+    return 0;
 }

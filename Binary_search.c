@@ -27,26 +27,26 @@ int main()
         printf("Which element you Find:");
         int low=0,high=size-1,mid,element,Found=0;
         scanf("%d",&element);
-     while(low<=high)
-     {
-       mid=(low+high)/2;
-      if(element==array[mid])
-      {
-        printf("Element are found :Index:%d ",mid);
-        Found=1;
-        break;
-      }
-      else if(element<array[mid])
-      {
-        high=mid-1;  // Find element in left side of mid
-      }
-      else if(element>array[mid])
-      {
-         low=mid+1;  // Find element in right side of mid
-      }
-    }
-    if(Found==0)
-      {
+        while(low<=high)
+        {
+           mid=(low+high)/2;
+           if(element>=array[mid])
+           {
+            printf("Element are found :Index:%d ",mid);
+            Found=1;
+            break;
+           }
+           else if(element<array[mid])
+           {
+            high=mid-1;  // Find element in right side of mid
+           } 
+           else if(element>array[mid])
+            {
+             low=mid+1;  // Find element in Left side of mid
+            }
+         }
+         if(Found==0)
+        {
         printf("Element are not found");  // element are not found in array
       }
    return 0;

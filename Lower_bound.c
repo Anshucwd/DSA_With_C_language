@@ -35,19 +35,20 @@
                      printf("This Element Lower Bound:%d",array[mid]);
                      found=1;
                      break;
-                    }
+                     }
                    else if(target > array[mid])
-                   {
-                     low=mid+1;                         //This is talk element Right side
-                   }
+                    {
+                     low=mid+1;                         //This is Find target Right side
+                    }
                    else if(target < array[mid])
-                   {
-                     high=mid-1;                      //This is talk element left side
-                   }
+                    {
+                     high=mid-1;                      //This is Find target left side
+                    }
             }
+             
             if(found==0)
             {
-               printf("Lower Bound Not Found:");
+               printf("This Target not Found:");
             }   
           }
           
