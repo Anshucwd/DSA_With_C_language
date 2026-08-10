@@ -40,7 +40,7 @@ int main()
          }
          else if(target>array[mid])
            {
-             low=mid+1;                 // Find element right:
+             low=mid+1;                 // Find Target right:
 
            }
          else if(target<=array[mid])
